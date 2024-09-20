@@ -21,7 +21,9 @@ You can check if Node.js and MongoDB are installed using the following commands:
 
 
 node -v
+
 npm -v
+
 mongod --version
 
 ## Project Scripts
