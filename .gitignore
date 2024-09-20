@@ -1,0 +1,46 @@
+# .gitignore file for your main project
+
+# Ignore node_modules folder in frontend (React project)
+frontend/node_modules/
+
+# Ignore build or production files in frontend
+frontend/build/
+frontend/.next/
+
+# Ignore environment files in frontend
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+frontend/.env.test
+
+# Ignore logs in frontend
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Ignore lock files (optional based on your preferences)
+frontend/package-lock.json
+frontend/yarn.lock
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python virtual environment (if used in backend)
+backend/venv/
+backend/env/
+
+# Ignore environment files in backend
+backend/.env
+
+# Ignore logs in backend
+backend/logs/
+backend/*.log
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore OS-generated files
+*.swp

@@ -1,0 +1,17 @@
+.button-wrapper{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.upload-section{
+    /* margin: 30px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 2px black;
+    padding: 30px;
+}
+.upload-section button{
+    width: fit-content;
+}

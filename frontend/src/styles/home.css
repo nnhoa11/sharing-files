@@ -1,0 +1,13 @@
+.home {
+    width: fit-content;
+    height: auto;
+    margin: auto;
+}
+.form {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+  
