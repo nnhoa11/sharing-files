@@ -27,6 +27,10 @@ frontend/yarn.lock
 .DS_Store
 Thumbs.db
 
+
+# Ignore node_modules folder in backend
+backend/node_modules/
+
 # Ignore Python virtual environment (if used in backend)
 backend/venv/
 backend/env/
@@ -36,9 +40,9 @@ backend/.env
 
 # Ignore logs in backend
 backend/logs/
-backend/*.log
+backend/*.log`
 
-# Ignore IDE-specific files
+# Ignore IDE-`
 .vscode/
 .idea/
 
