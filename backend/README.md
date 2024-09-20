@@ -19,7 +19,7 @@ Before running this project, make sure you have the following installed on your 
 
 You can check if Node.js and MongoDB are installed using the following commands:
 
-```bash
+
 node -v
 npm -v
 mongod --version
@@ -28,10 +28,10 @@ mongod --version
 
 The following NPM scripts are available for this project:
 
-- **`npm start`**: Starts the application in production mode. Runs `node index.js`. 
+**`npm start`**: Starts the application in production mode. Runs `node index.js`. 
   Example: `npm start`
 
-- **`npm run dev`**: Starts the application in development mode using `nodemon`, which automatically restarts the server on file changes.
+**`npm run dev`**: Starts the application in development mode using `nodemon`, which automatically restarts the server on file changes.
   Example: `npm run dev`
 
 **`npm test`**: Currently, this is a placeholder script. You can customize it to run your tests in the future.
