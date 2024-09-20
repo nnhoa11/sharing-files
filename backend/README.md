@@ -34,13 +34,13 @@ The following NPM scripts are available for this project:
 - **`npm run dev`**: Starts the application in development mode using `nodemon`, which automatically restarts the server on file changes.
   Example: `npm run dev`
 
-- **`npm test`**: Currently, this is a placeholder script. You can customize it to run your tests in the future.
+**`npm test`**: Currently, this is a placeholder script. You can customize it to run your tests in the future.
   Example: `npm test`
 
 ### Example Usage
 
-- **Start in Development Mode**: To start the server with automatic reloading for development: `npm run dev`
+**Start in Development Mode**: To start the server with automatic reloading for development: `npm run dev`
   
-- **Start in Production Mode**: To start the server for production: `npm start`
+**Start in Production Mode**: To start the server for production: `npm start`
 
-- **Testing**: Add test cases and run them with: `npm test`
+**Testing**: Add test cases and run them with: `npm test`
