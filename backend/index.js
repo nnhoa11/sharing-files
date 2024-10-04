@@ -13,9 +13,6 @@ app.set('trust proxy', 1)
 
 const httpServer = http.createServer(app)
 
-app.get('/', (req, res) => {
-  res.download('upload/sample.txt')
-})
 
 db.connect()
 .then(() => {

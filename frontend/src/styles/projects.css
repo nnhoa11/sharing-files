@@ -1,0 +1,10 @@
+.projects{
+    margin: 30px;
+
+}
+.project{
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+}

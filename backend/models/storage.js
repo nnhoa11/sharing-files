@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 const { Schema, model, Types } = mongoose;
-const userOwner = require('./user');
+const Project = require('./project');
 
 const storageSchema = new Schema({
-    owner: {type: Types.ObjectId, ref: "User"},
-    fileName: {type: String, required: true}
+    project: {type: Types.ObjectId, ref: "Project"},
+    fileName: {type: String, required: true},
+    originName: {type: String, required: true},
 });
 
 const Storage = model('Storage', storageSchema);

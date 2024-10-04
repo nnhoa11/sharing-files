@@ -3,9 +3,8 @@ const Files = require('../models/storage')
 class FilesController {
     getFiles(req, res, next) {
         // Get all files from database and return them
-        console.log(req.query.userId)
         if (req.query.userId){
-            Files.find()
+            Files.find({projectId: req.query.projectId})
             .then((files) => {
                 res.json({success: true, files: files});
             })
@@ -16,9 +15,14 @@ class FilesController {
         else res.json({success: false, message: 'No files found'})
     }
     uploadFiles(req, res) {
-        console.log(req.body);
-        console.log(req.files);
-        res.json({ message: "Successfully uploaded files" });
+        if (req.file){
+            Files.create({
+                project: req.body.userId,
+                fileName: req.file.filename,
+                originName: req.file.originalname,
+            })
+            res.json({ message: "Successfully uploaded files" });
+        }
     }
 }
 
