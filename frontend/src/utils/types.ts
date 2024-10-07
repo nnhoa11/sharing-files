@@ -3,8 +3,8 @@ interface Project {
     name : String,
     description : String,
     price: Number,
-    files: String,
-    owner: String
+    files?: String,
+    owner?: String
 }
 interface User{
     userId: string,
