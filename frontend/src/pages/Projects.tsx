@@ -87,30 +87,12 @@ export default function Projects() {
                     //     },
                     //     responseType: 'blob'
                     // })
-           
-                
-                    const res = await fetch(`http://localhost:3000/project/download?projectId=${projectId}&clientId=${projectInfo.owner}`,{
-                        method: 'GET',
-                      
-                    })
-                    .then(res => res.blob())
-                    .then(blob => {
-                        const url = window.URL.createObjectURL(
-                            new Blob([blob]),
-                        );
-                        console.log(blob)
-                          const link = document.createElement('a');
-                          link.href = url;
-                          link.setAttribute(
-                            'download',
-                            `a.png`
-                          );
-                      
-                          link.click();
-                      
-               
-                    })
-          
+
+                    const url = document.createElement('a');
+
+                    url.setAttribute('href', `http://localhost:3000/project/download?projectId=${projectId}&clientId=${projectInfo.owner}`);
+                    url.setAttribute('target', '_blank');
+                    url.click();
                     
                 }}>Download</button>
                 }
